@@ -32,28 +32,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/main_barrier"
                 android:padding="@dimen/fragment_padding"
                 tools:text="The Post"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_image"
-                android:layout_width="@dimen/image_size"
-                android:layout_height="@dimen/image_size"
-                android:textSize="@dimen/text_size_title"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:padding="@dimen/fragment_padding"/>
-
-            <androidx.constraintlayout.widget.Barrier
-                android:id="@+id/main_barrier"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                app:barrierDirection="start"
-                app:constraint_referenced_ids="main_image"
-                tools:layout_editor_absoluteX="273dp"
-                tools:layout_editor_absoluteY="128dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
