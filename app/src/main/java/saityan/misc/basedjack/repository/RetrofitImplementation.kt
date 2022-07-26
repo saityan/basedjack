@@ -30,7 +30,7 @@ class RetrofitImplementation {
     private fun createOkHttpClient(interceptor: okhttp3.Interceptor) : OkHttpClient {
         val httpClient = OkHttpClient.Builder()
         httpClient.addInterceptor(interceptor)
-        httpClient.addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
+        httpClient.addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.HEADERS))
         return httpClient.build()
     }
 

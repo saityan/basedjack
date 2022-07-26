@@ -19,7 +19,7 @@ class MainViewModel : ViewModel() {
 
     fun sendServerRequest() {
         dataObservable.value = PostsData.Loading
-        val limit = "1"
+        val limit = "100"
         retrofit.getTopPosts(limit, callback)
     }
 
